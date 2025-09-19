@@ -8,10 +8,11 @@
 </head>
 <body>
     <h1>Butterfly Database</h1>
-    <p>Explore 10 types of butterflies with images, descriptions, and links.</p>
+    <h3>Explore 10 types of butterflies with images, descriptions, and links.</h3>
 
+    <div id="controls">
     <div id="search-container">
-        <input type="text" id="searchBox" placeholder="Search butterflies" maxlength="20">
+        <input type="text" id="searchBox" placeholder="Search butterflies" maxlength="50">
         <button onclick="searchButterflies()">Search</button>
     </div>
 
@@ -30,6 +31,7 @@
             <option value="Vanessa cardui">Vanessa cardui</option>
         </select>
     </div>
+</div>
 
     <ol type="I" id="butterflyList">
         <li>
@@ -165,7 +167,7 @@
     </ol>
 
     <footer>
-        Data sourced from <a href="https://www.leedsbutterflies.org" target="_blank">Leeds Butterfly Database</a>.
+        Data sourced from <a href="https://www.josiahwang.com/dataset/leedsbutterfly" target="_blank">Leeds Butterfly Database</a>.
     </footer>
 </body>
 </html>

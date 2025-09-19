@@ -21,9 +21,12 @@ function searchButterflies() {
   }
 
   const matches = butterflies
-    .filter(b => b.common.toLowerCase().includes(input.toLowerCase()))
-    .slice(0, 5)
-    .map(b => b.common);
+  .filter(b => 
+      b.common.toLowerCase().includes(input.toLowerCase()) ||
+      b.description.toLowerCase().includes(input.toLowerCase())
+  )
+  .slice(0, 5)
+  .map(b => b.common);
 
   if (matches.length > 0) {
     alert("Matches: " + matches.join(", "));

@@ -1,11 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f0f8ff;
+    background-color: #e7acaca5;
+}
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    text-align: center;
+    font-size: medium;
 }
 
 h1 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 50px;
     text-align: center;
+    font-size: 60px;
 }
 
 #search-container, #dropdown-container {
@@ -14,18 +23,21 @@ h1 {
 }
 
 ol li {
-    border: 1px solid #ccc;
+    border: 1px solid #0b0404;
+    width: 1055px;
     padding: 10px;
-    margin-bottom: 15px;
-    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    background-color: #de969698;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ol li:hover {
-    background-color: #e0f7fa;
+    background-color: #de9696c7;
 }
 
 .images img {
-    width: 150px;
+    width: 250px;
     margin: 5px;
     border-radius: 5px;
 }
@@ -34,4 +46,24 @@ footer {
     margin-top: 30px;
     font-size: 0.9em;
     text-align: center;
+}
+
+#controls {
+    display: flex;
+    justify-content: center; /* center everything horizontally */
+    align-items: center;     /* align vertically */
+    gap: 15px;               /* space between search and dropdown */
+    margin-bottom: 20px;
+}
+
+#search-container input {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 220px; /* make search box a bit longer */
+}
+
+#search-container button,
+#dropdown-container select {
+    padding: 8px 12px;
+    font-size: 14px;
 }
